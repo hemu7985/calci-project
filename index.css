@@ -1,0 +1,85 @@
+/* index.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px; /* Adjust this value as needed */
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    border-bottom: 2px solid #444;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #fff;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ff9500;
+    outline: none;
+}
+
+button {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #555;
+    transform: translateY(0);
+}
+
+button:nth-child(4n) {
+    background-color: #ff9500;
+    color: white;
+}
+
+button:nth-child(4n):hover {
+    background-color: #e08e00;
+}
+
+button:nth-child(4n):active {
+    background-color: #cc7a00;
+}
+
+.container > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
